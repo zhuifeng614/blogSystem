@@ -4,7 +4,6 @@ import {Menu} from "antd"
 import "./css/menus.less"
 import logo from "../../static/img/logo.jpg"
 import menus from "../../config/menu-config"
-
 const { Item,SubMenu } = Menu
 
 @withRouter
@@ -44,7 +43,6 @@ class Menus extends Component {
 						defaultOpenKeys={openKey}
 						mode="inline"
 						theme="dark"
-
 					>
 						{this.creatMenus(menus)}
 					</Menu>

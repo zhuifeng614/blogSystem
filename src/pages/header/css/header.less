@@ -1,12 +1,21 @@
 .header{
+	display: flex;
+	flex-direction: row;
 	height: 40px;
 	color: #21252B;
 	background-color: #fff;
+	border-bottom: 1px solid #23A9F2;
+	.flexible{
+		flex: 5%;
+		.ant-btn{
+			transform: translate(5px,3px);
+		}
+	}
 	.headerTop{
+		flex: 95%;
 		height: 40px;
 		text-align: right;
 		line-height: 40px;
-		border-bottom: 1px solid #23A9F2;
 		.greetext{
 			margin-left: 14px;
 		}

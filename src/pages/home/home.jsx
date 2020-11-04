@@ -13,10 +13,10 @@ export default class Home extends Component {
 	render() {
 		return (
 				<Layout className="layout">
-					<Sider><Menus/></Sider>
+					<Sider> <Menus/> </Sider>
 					<Layout>
 						<Header/>
-						<Content>
+						<Content className="content">
 							<Switch>
 								<Route path="/home/visualchart" component={Visualchart}/>
 								<Route path="/home/blog_regulator/Project" component={Project}/>
@@ -24,7 +24,7 @@ export default class Home extends Component {
 								<Redirect to="/home/visualchart"/>
 							</Switch>
 						</Content>
-						<Footer>Footer</Footer>
+						<Footer className="footer"> @ 全栈修练 奋斗到天明 </Footer>
 					</Layout>
 				</Layout>
 		)
